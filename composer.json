@@ -1,0 +1,34 @@
+{
+    "name": "razonyang/token-bucket",
+    "description": "PHP Token Bucket",
+    "type": "library",
+    "keywords": ["token bucket", "rate limiter"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Razon Yang",
+            "email": "razonyang@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "psr/log": "^1.1"
+    },
+    "suggest": {
+        "ext-memcached": "MemcachedManager require memcached extension",
+        "ext-redis": "RedisManager require redis extension"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    },
+    "autoload": {
+        "psr-4": {
+            "RazonYang\\TokenBucket\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RazonYang\\TokenBucket\\Tests\\": "tests"
+        }
+    }
+}
